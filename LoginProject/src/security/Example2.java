@@ -23,6 +23,7 @@ public class Example2 extends HttpServlet {
     }
     
     // This is to test comit from ANTOEHR USER
+    // THIS IS MY PROJECT
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		String un=request.getParameter("userName");
