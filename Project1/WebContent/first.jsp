@@ -4,9 +4,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
 <title>Insert title here</title>
+
 </head>
+
 <body>
    This is my first java web application project
+<form action="hello">
+
+<label for="name">Mohammad Imadulla khan</label><br/>
+<input type="text" name="name"/>
+<input type="submit" value="Say Hello"/>
+
+</form>
 </body>
+
 </html>

@@ -49,10 +49,10 @@ public class UpdateData extends HttpServlet {
 			
 			System.out.println("create statement");
 			
-			PreparedStatement statement = con.prepareStatement("select * from emp where empno=? ");
 			PreparedStatement insert = con.prepareStatement("insert into emp (empno,ename,mgrno,deptno) values(?,?, ?,?)");
-			PreparedStatement updt = con.prepareStatement("update emp set ename=?,mgrno=?,deptno=? where empno=?");
-			
+			PreparedStatement updt = con.prepareStatement("update emp set ename=?,mgrno=?,deptno=? where empno=?");			
+			PreparedStatement statement = con.prepareStatement("select * from emp where empno=? ");
+
 			statement.setString(1, empno);
 			ResultSet  rs = statement.executeQuery();
 		
@@ -65,7 +65,6 @@ public class UpdateData extends HttpServlet {
 			
 				updt.executeUpdate();
 				out.println("record updated successfully");
-				
 			
 			} else{
 			
@@ -73,7 +72,6 @@ public class UpdateData extends HttpServlet {
 			   insert.setString(2, ename);
 			   insert.setString(3, mgrno);
 			   insert.setString(4, deptno);
-			   
 			
 			   insert.executeUpdate();
 			   out.println("record inserted successfully");

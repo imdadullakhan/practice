@@ -11,10 +11,9 @@
 <form action = "UpdateData">
 
 Employee no : <input type = "text"  name = "empno"></input><br/>
-Employee name :<input type= "text"  name = "ename"></input><br/>
+Employee name:<input type = "text"  name = "ename"></input><br/>
 Manager no : <input type  = "text"  name = "mgrno"></input><br/>
-Dept no    : <input type   = "text" name = "deptno"></input><br/>
-
+Dept no    : <input type  = "text"  name = "deptno"></input><br/>
 
 <input type="submit" value="add"/>
 </body>
